@@ -6,6 +6,7 @@
 - `docker build .`
 - `docker-compose`などはお好みで
 - デフォルトで`3000/tcp`を使用します
+- 直下に、GCP Consoleで作成したサービスアカウントのCredentialを含んだJSON Fileを`credential.json`として作成します（デフォルトでgitignoreされています）
 
 - 環境変数は以下の通り作成します
 ```dotenv

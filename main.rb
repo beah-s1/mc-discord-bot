@@ -42,6 +42,7 @@ bot.command :stop_mc do |event|
   p "Stop Minecraft Server..."
 
   gce_client.stop_instance(ENV["GOOGLE_CLOUD_PROJECT_ID"], ENV["GOOGLE_CLOUD_ZONE"], gce_instance.name)
+  return "サーバーの停止処理がエンキューされました"
 end
 
 # 状態を送信するためのチャンネルを探索して、セットする

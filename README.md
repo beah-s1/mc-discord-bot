@@ -7,9 +7,10 @@
 - `docker-compose`などはお好みで
 - デフォルトで`3000/tcp`を使用します
 - 直下に、GCP Consoleで作成したサービスアカウントのCredentialを含んだJSON Fileを`credential.json`として作成します（デフォルトでgitignoreされています）
+  - Compute Engineの読み書き権限を付与してください
 
 - 環境変数は以下の通り作成します
-```dotenv
+```env
 DISCORD_CLIENT_ID=DiscordBotのクライアントID
 DISCORD_TOKEN=DiscordBotのToken
 DISCORD_CHANNEL=通知を行う先のDiscordチャンネル名
